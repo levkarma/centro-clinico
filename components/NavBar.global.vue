@@ -1,5 +1,5 @@
 <template>
-	<nav class="navbar" role="navigation" aria-label="main navigation">
+	<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a class="navbar-item" href="https://bulma.io">
 				<img
@@ -73,11 +73,11 @@
 
 <script>
 export default {
-	name: "NavBar",
+	name: 'NavBar',
 	data() {
-		return {};
+		return {}
 	}
-};
+}
 </script>
 
 <style lang="css" scoped></style>

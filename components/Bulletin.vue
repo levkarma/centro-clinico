@@ -1,0 +1,34 @@
+<template>
+	<section class="section">
+		<div class="columns is-centered">
+			<div class="column is-half">
+				<div class="content">
+					<h1>Bulletin</h1>
+					<a
+						class="twitter-timeline"
+						data-height="500"
+						href="https://twitter.com/BarackObama?ref_src=twsrc%5Etfw"
+						>Tweets by BarackObama</a
+					>
+					<script
+						async
+						src="https://platform.twitter.com/widgets.js"
+						charset="utf-8"
+					></script>
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<script>
+export default {
+	name: 'Bulletin',
+
+	data() {
+		return {}
+	}
+}
+</script>
+
+<style lang="css" scoped></style>
