@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "bulma": "^0.8.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "supports-webp": "^2.0.1"
   },
   "devDependencies": {
     "@nuxtjs/global-components": "^0.6.1"

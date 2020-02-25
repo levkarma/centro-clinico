@@ -27,7 +27,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    // '~/plugins/delay-heavy-elements.client.js',
+    '~/plugins/webp-support.client.js'
+  ],
   /*
    ** Nuxt.js dev-modules
    */

@@ -1,3 +1,34 @@
-@import "~/node_modules/bulma/sass/utilities/_all.sass";
+@import '~/node_modules/bulma/sass/utilities/_all.sass';
+@import '~/assets/scss/variables/navbar-variables.scss';
 // can use color variables, etc here
-@import "bulma";
+@import 'bulma';
+$background-image-urls: (
+	'#frame-one .zoom-background': '~assets/img/Ultra_Care-10.jpg'
+);
+
+@each $selector, $url in $background-image-urls {
+	.no-webp #{$selector} {
+		background-image: url($url);
+	}
+	.webp #{$selector} {
+		background-image: url($url+'.webp');
+	}
+}
+.zoomed {
+	transform: scale(1.1) !important;
+}
+.zoom-background {
+	transition: transform 8s ease 0s;
+	transform: scale(1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#frame-one.hero {
+	height: 100vh;
+}
