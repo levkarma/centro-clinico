@@ -13,6 +13,7 @@
   "dependencies": {
     "bulma": "^0.8.0",
     "nuxt": "^2.0.0",
+    "nuxt-i18n": "^6.6.0",
     "supports-webp": "^2.0.1"
   },
   "devDependencies": {

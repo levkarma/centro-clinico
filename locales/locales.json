@@ -1,0 +1,187 @@
+{
+  "en": {
+    "clinicName": "Ultra Care Family Clinic",
+    "scheduleAppointment": "Schedule an appointment.",
+    "header": {
+      "home": "Home",
+      "locations": "Locations",
+      "mission": "Mission",
+      "appointments": "Appointments",
+      "faqs": "FAQS"
+    },
+    "bulletin": "Bulletin",
+    "services": "Services",
+    "services-list": [
+      "Acute Problems",
+      "Family Planning",
+      "Chronic Conditions",
+      "Mental Health",
+      "Preventative Care",
+      "Sports Medicine",
+      "Women's Health",
+      "Men's Health"
+    ],
+    "locations": [
+      {
+        "name": "Clifton",
+        "address": "474 Clifton Ave, Clifton, NJ 07011",
+        "details": "Located right along Clifton Avenue this office is the best choice for our walk-patients with no prior appointment.",
+        "hours": "Monday - Friday 8:30am- 5:30pm",
+        "staff": {
+          "name": "Denia Perez NP",
+          "blurb": "A Costa Rican native, Denia has been serving the community of Paterson for over 10 years. A caring provider who specializes in managing diabetic patients she practices patient-centered, culturally sensitive, and prevention focused medical care."
+        },
+        "phone": "862-291-0080"
+      },
+      {
+        "name": "Hine Street",
+        "address": "32 Hine St., Paterson, NJ 07503",
+        "details": "Located on the 3rd floor of 32 Hine, this office is best for scheduled appointments and patients who need recurring visits. (The office is accessible via the elevator in the lobby).",
+        "hours": "Monday - Friday 9:30- 6:00pm",
+        "staff": {
+          "name": "Allison Barria NP",
+          "blurb": "The newest provider on the ultra care team. Allison has been a nurse practitioner for ___ years. Passionate about women’s health and patient education; you can count on her to provide exceptionally professional care with a compassionate approach."
+        },
+        "phone": "973-341-3782"
+      },
+      {
+        "name": "6th Ave",
+        "address": "185 6th Ave, Paterson, NJ 07501",
+        "details": "Located in the same building as WIC Services; down the hall on the first floor. The first of all the open locations, patients here have been regulars for years.",
+        "hours": "Monday - Friday 9:30- 6:00pm",
+        "staff": {
+          "name": "Dr. Luis Luna MD",
+          "blurb": "Luis Luna has been a provider in the community of Patterson for over  10 years. His patient’s are the biggest testament to his attention to detail and investment in bettering their lives. He can be found in the 6th Avenue location which is the first of all the Ultra Care clinics."
+        },
+        "phone": "973-782-5550"
+      }
+    ],
+    "mission": {
+      "header": "Our Mission",
+      "text": [
+        "Our mission is to credibly utilize trends in science and medicine to positively impact marginalized communities.",
+        "We work to improve patient outcomes with empowerment & education."
+      ]
+    },
+    "coming-soon": "Coming soon.",
+    "faq": [
+              {
+                "q": "What insurance do you accept?",
+                "a": "We Accept ALL NJ Insurances except Aetna Silver. <br><p style='font-size:14px;'>This includes Medicare and Medicaid</p>"
+              },
+              {
+                "q": "What are the office hours?",
+                "a": "<strong>6th Ave</strong>: Monday - Friday 9:30am - 6:00pm<br><strong>Hine St</strong>:  Monday - Friday 8:30am - 5:30pm<br><strong>Clifton</strong> : Monday - Friday 8:30am - 5:30pm"
+              },
+              {
+                "q": "Do I need to bring anything to my appointment?",
+                "a": "You should always bring photo ID and your Insurance card to you appointments. New patients should also bring a list of their medications as well as know the name of your previous primary care provider."
+              },
+              {
+                "q": "Will you see children?",
+                "a": "While we do not specialize in pediatrics we will see children over 12 months of age."
+              },
+              {
+                "q": "Do you accept walk-in patients?",
+                "a": "All the locations have appointments from opening to close. Walk-ins should go to our office in Clifton as this office leaves room in their schedule for walk ins."
+              },
+              {
+                "q": "Is Spanish spoken at all offices?",
+                "a": "All Ultra Care providers and employees speak both English and Spanish to ensure quality care."
+              }    
+    ]
+  },
+  "es": {
+    "clinicName": "Clínica de Familia: Ultra Care",
+    "scheduleAppointment": "Hacer Cita.",
+    "header": {
+      "home": "Inicio",
+      "locations": "Ubicaciones",
+      "mission": "Misión",
+      "appointments": "Hacer Cita",
+      "faqs": "Preguntas Frecuentes"
+    },
+    "bulletin": "Notificaciones",
+    "services": "Servicios",
+    "services-list": [
+      "Problemas Agudos",
+      "Planificación familiar",
+      "Condiciones Crónicas",
+      "Salud Mental",
+      "Medicina Preventiva",
+      "Medicina Deportiva",
+      "Salud Feminina",
+      "Salud de los Hombres"
+    ],
+    "locations": [
+      {
+        "name": "Clifton",
+        "address": "474 Clifton Ave, Clifton, NJ 07011",
+        "details": "Ubicado siguiendo la Avenida Clifton, esta oficina es la major opcion para nuestors pacientes que no han hecho una cita.",
+        "hours": "Lunes – Viernes 8:30am- 5:30pm",
+        "staff": {
+          "name": "Denia Perez NP",
+          "blurb": "Nacido en Costa Rica, Denia tiene más de diez años sirviendo la comunidad de Paterson, NJ. Ella es una proveedora que especializa en ayudar sus pacientes controlar la diabetes y se enfoca en medicina preventiva. Se graduó con su Bachillerato en Enfermería del College of Saint Elizabeth. Recibió su Maestría en Enfermería de Fairleigh Dickinson University en Teaneck y se especializó en Medicina Interna. Ella es bilingüe y puede hablar Ingles y Español."
+        },
+        "phone": "862-291-0080"
+      },
+      {
+        "name": "Hine Street",
+        "address": "32 Hine St., Paterson, NJ 07503",
+        "details": "En el segundo piso de 32 Hine, esta oficina es mejor para pacientes que requieren varios cita sobre mucho tiempo o simplemente quieren una doctora de familia.",
+        "hours": "Lunes – Viernes 9:30- 6:00pm",
+        "staff": {
+          "name": "Allison Barria NP",
+          "blurb": "Allison Barria recibió su Bachillerato en Enfermería de Fairfield University en Connecticut donde ella se graduó con honores. Ella recibió su Maestría en Enfermería de Rutgers University en Newark donde se especializó en Medicina Adulta/Gerontología y esta reconocida por la Academia Americana de Nurse Practitioners. Alison tiene 6 años de experiencia trabajando en el departamento ortopédico de Hackensack University Medical Center. Ella es bilingüe y puede hablar Ingles y Español."
+        },
+        "phone": "973-341-3782"
+      },
+      {
+        "name": "6th Ave",
+        "address": "185 6th Ave, Paterson, NJ 07501",
+        "details": "Ubicado en el mismo edificio que los Servicios WIC; siguiendo el corredor en el primer piso. La primera de todas las oficinas, los pacientes aquí han estado aquí desde el inicio de Ultra Care en muchos casos.",
+        "hours": "Lunes – Viernes 9:30- 6:00pm",
+        "staff": {
+          "name": "Dr. Luis Luna MD",
+          "blurb": "Dr. Luis Luna ha trabajado con la comunidad de Paterson NJ por más de 10 anos. La felicidad de sus pacientes son la prueba más grande de su atención a detalles y la importancia que el toma en ver los mejorar. Se encuentra en la ubicación de la Sexta Avenida; la primera de todas las clínicas de Ultra Care."
+        },
+        "phone": "973-782-5550"
+      }
+    ],
+    "mission": {
+      "header": "Nuestra Misión",
+      "text": [
+        "Nuestra misión es usar la evidencia en ciencia y medicina para mejorar las vidas de las comunidades tradicionalmente marginadas.",
+        "Trabajamos para mejorar los resultados de nuestros pacientes con empoderamiento y educación."
+      ]
+    },
+    "coming-soon": "Próximamente.",
+    "faq": [
+      {
+        "q": "Cuales seguros de salud aceptan?",
+        "a": "Aceptamos TODOS los seguros de NJ. La única excepción es Aetna Silver. <br><p style='font-size:14px;'>Esto incluye a Medicare y Medicaid</p>"
+      },
+      {
+        "q": "Cuales son los horarios de negocio?",
+        "a": "<strong>6th Ave</strong>: Lunes - Viernes 9:30am - 6:00pm<br><strong>Hine St</strong>:  Lunes - Viernes 8:30am - 5:30pm<br><strong>Clifton</strong> : Lunes - Viernes 8:30am - 5:30pm"
+      },
+      {
+        "q": "Necesito traer algo conmigo a mi cita",
+        "a": "Siempre deberías traer su identificaion y su tarjeta de seguro a cada cita que tienes. Si es su primera cita también deberías traer una lista de sus medicaciones y también saber el nombre de su doctor que veías antes de nosotros."
+      },
+      {
+        "q": "Toman niños como pacientes?",
+        "a": "Nuestra especialidad no es pediatría pero con gusto veremos a niños que tienen mas de 12 meses de edad."
+      },
+      {
+        "q": "Aceptan pacientes sin cita?",
+        "a": "Todas nuestras ubicaciones tiene citas planeadas durante todo el día. Si vienes sin cita es posible que no te podamos ver. Se prefiere que todos los pacientes que no tienen cita vayan a la oficina en Clifton. Esta oficina deja tiempo en su horario para pacientes sin cita."
+      },
+      {
+        "q": "Se habla Español en todas las oficinas?",
+        "a": "Todos los empleados de Ultra Care hablan Ingles y Español para asegurar la mejor calidad de atención medica."
+      }    
+    ]
+  }
+}
+

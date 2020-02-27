@@ -1,12 +1,12 @@
 <template>
 	<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<a class="navbar-item" href="https://bulma.io">
-				<img
-					src="https://bulma.io/images/bulma-logo.png"
-					width="112"
-					height="28"
-				/>
+			<a class="navbar-item" href="/">
+				<picture>
+					<source srcset="~/assets/img/logo.png" type="image/png" />
+					<source srcset="~/assets/img/logo.png.webp" type="image/webp" />
+					<img srcset="~/assets/img/logo.png" type="image/png" />
+				</picture>
 			</a>
 
 			<a
@@ -58,11 +58,19 @@
 			<div class="navbar-end">
 				<div class="navbar-item">
 					<div class="buttons">
-						<a class="button is-primary">
-							<strong>Sign up</strong>
+						<a
+							v-if="this.$i18n.locale === 'en'"
+							class="button is-light"
+							:href="switchLocalePath('es')"
+						>
+							Espa&ntildeol
 						</a>
-						<a class="button is-light">
-							Log in
+						<a
+							v-if="this.$i18n.locale === 'es'"
+							class="button is-light"
+							:href="switchLocalePath('en')"
+						>
+							English
 						</a>
 					</div>
 				</div>
@@ -76,7 +84,8 @@ export default {
 	name: 'NavBar',
 	data() {
 		return {}
-	}
+	},
+	mounted() {}
 }
 </script>
 

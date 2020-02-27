@@ -5,12 +5,12 @@
 	>
 		<div class="zoom-background zoomed"></div>
 		<div class="hero-body">
-			<div class="container">
-				<h1 class="title">
-					Fullheight title
+			<div class="container content has-text-centered">
+				<h1 class="has-text-white">
+					{{ $t('clinicName') }}
 				</h1>
-				<h2 class="subtitle">
-					Fullheight subtitle
+				<h2 class="subtitle has-text-white">
+					{{ $t('scheduleAppointment') }}
 				</h2>
 			</div>
 		</div>
