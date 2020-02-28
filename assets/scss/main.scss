@@ -35,6 +35,10 @@ $background-image-urls: (
 	height: 100%;
 	background-size: cover;
 	background-position: 50% 60%;
+	@include mobile {
+		background-size: cover;
+		background-position: 50% 0%;
+	}
 	background-repeat: no-repeat;
 }
 #frame-one {
@@ -46,7 +50,17 @@ $background-image-urls: (
 			}
 		}
 		.background-modifier {
-			background-color: rgba($info, 0.3);
+			background-color: rgba($info, 0.5);
+		}
+		.hero-body {
+			align-items: flex-end;
+			@include mobile {
+				padding: 3rem 0 0 0;
+				.container {
+					background-color: $info;
+					padding: 1rem;
+				}
+			}
 		}
 	}
 }
@@ -108,7 +122,9 @@ $background-image-urls: (
 	}
 }
 #locations.section {
-	padding: 5rem 10rem;
+	@include tablet {
+		padding: 5rem 10rem;
+	}
 }
 #faqs {
 	@include tablet {
