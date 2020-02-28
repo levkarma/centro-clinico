@@ -16,6 +16,8 @@
     "supports-webp": "^2.0.1"
   },
   "devDependencies": {
-    "@nuxtjs/global-components": "^0.6.1"
+    "@nuxtjs/global-components": "^0.6.1",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
   }
 }
