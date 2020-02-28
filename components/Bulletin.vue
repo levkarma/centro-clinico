@@ -3,7 +3,7 @@
 		<div class="columns is-centered">
 			<div class="column is-half">
 				<div class="content">
-					<h1>Bulletin</h1>
+					<h1>{{ $t('bulletin') }}</h1>
 					<a
 						class="twitter-timeline"
 						data-height="500"

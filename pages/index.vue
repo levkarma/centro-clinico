@@ -1,9 +1,16 @@
 <template>
   <div>
-    <NavBar />
     <FrameOne />
+    <FrameTwo />
+    <Mission />
     <Bulletin />
     <Services />
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p><strong>Centro Clinico</strong></p>
+        <p>&copy; 2020</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -11,16 +18,21 @@
 import FrameOne from '~/components/FrameOne'
 import Bulletin from '~/components/Bulletin'
 import Services from '~/components/Services'
+import Mission from '~/components/Mission'
+import FrameTwo from '~/components/FrameTwo'
 export default {
   components: {
     FrameOne,
     Bulletin,
-    Services
+    Services,
+    Mission,
+    FrameTwo
   },
   mounted() {
     this.$webpSupport()
     // this.$delayHeavyElements()
     // this.handleInitalScrollPosition()
-  }
+  },
+  updated() {}
 }
 </script>

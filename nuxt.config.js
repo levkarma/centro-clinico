@@ -29,7 +29,8 @@ export default {
    */
   plugins: [
     // '~/plugins/delay-heavy-elements.client.js',
-    '~/plugins/webp-support.client.js'
+    '~/plugins/webp-support.client.js',
+    { src: '~/plugins/aos.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -38,7 +39,19 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    [
+      'nuxt-i18n',
+      {
+        locales: ['en', 'es'],
+        defaultLocale: 'en',
+        vueI18n: {
+          fallbackLocale: 'en',
+          messages: require('./locales/locales.json')
+        }
+      }
+    ]
+  ],
   /*
    ** Build configuration
    */

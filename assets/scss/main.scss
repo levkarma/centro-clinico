@@ -1,12 +1,15 @@
 @import '~/node_modules/bulma/sass/utilities/_all.sass';
 $info: rgba(100, 100, 200, 0.9);
 $info-light: lighten($info, 10%);
+$huge: 8rem;
 @import '~/assets/scss/variables/navbar-variables.scss';
+@import '~/assets/scss/variables/box-variables.scss';
 // can use color variables, etc here
 @import 'bulma';
 $background-image-urls: (
 	'#frame-one .zoom-background': '~assets/img/Ultra_Care-10.jpg',
-	'#services': '~assets/img/Ultra_Care-3.jpg'
+	'#services-header': '~assets/img/Ultra_Care-3.jpg',
+	'#mission': '~assets/img/Ultra_Care-5.jpg'
 );
 
 @each $selector, $url in $background-image-urls {
@@ -33,14 +36,81 @@ $background-image-urls: (
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-#frame-one.hero {
-	height: 100vh;
+#frame-one {
+	&.hero {
+		height: 100vh;
+		h1 {
+			@include tablet {
+				// font-size: $huge;
+			}
+		}
+		.background-modifier {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+	}
 }
 .has-overflow-hidden {
 	overflow: hidden;
+}
+.has-top-margin {
+	margin-top: 1.5rem;
 }
 .has-background-image {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+.background-modifier {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#services-header .background-modifier {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#mission {
+	@include tablet {
+		padding: 9rem 1.5rem 27rem 1.5rem;
+	}
+	@include mobile {
+		padding: 30rem 1.5rem 6rem 1.5rem;
+	}
+	#header {
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+	}
+	.background-modifier {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	.content {
+		@include tablet {
+			padding: 5rem 3rem;
+		}
+		box-shadow: 5px 5px 20px $light;
+	}
+}
+#services .service-box {
+	background-color: $info-light;
+	font-weight: 700;
+}
+#services {
+	background-color: $info-light;
+	@include tablet {
+		h1 {
+			font-size: $huge;
+		}
+	}
+}
+#locations.section {
+	padding: 5rem 10rem;
+}
+#faqs {
+	@include tablet {
+		max-width: 600px;
+		margin: auto;
+	}
 }
