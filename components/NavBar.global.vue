@@ -1,8 +1,17 @@
 <template>
-	<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+	<nav
+		class="navbar is-spaced"
+		role="navigation"
+		aria-label="main navigation"
+	>
 		<div class="navbar-brand">
 			<a class="navbar-item" href="/">
-				<span class="is-size-2" style="font-weight: 700;">Centro Clinico</span>
+				<span class="icon is-large"
+					><i class="fas fa-3x fa-clinic-medical"></i
+				></span>
+				<span class="is-size-2" style="font-weight: 700;"
+					>Centro Clinico</span
+				>
 				<!-- <picture>
 					<source srcset="~/assets/img/logo.png" type="image/png" />
 					<source srcset="~/assets/img/logo.png.webp" type="image/webp" />
@@ -26,18 +35,18 @@
 		<div id="navbarBasicExample" class="navbar-menu">
 			<div class="navbar-end">
 				<nuxt-link to="/" class="navbar-item">
-					{{ $t('header.home') }}
+					{{ $t("header.home") }}
 				</nuxt-link>
 
 				<nuxt-link to="/#services" class="navbar-item">
-					{{ $t('services') }}
+					{{ $t("services") }}
 				</nuxt-link>
 
 				<nuxt-link class="navbar-item" to="/locations">
-					{{ $t('header.locations') }}
+					{{ $t("header.locations") }}
 				</nuxt-link>
 				<nuxt-link class="navbar-item" to="/faqs">
-					{{ $t('header.faqs') }}
+					{{ $t("header.faqs") }}
 				</nuxt-link>
 				<div class="navbar-item">
 					<div class="buttons">
@@ -64,12 +73,12 @@
 
 <script>
 export default {
-	name: 'NavBar',
+	name: "NavBar",
 	data() {
-		return {}
+		return {};
 	},
 	mounted() {}
-}
+};
 </script>
 
 <style lang="css" scoped></style>

@@ -1,15 +1,16 @@
-@import '~/node_modules/bulma/sass/utilities/_all.sass';
-$info: rgba(100, 100, 200, 0.9);
+@import "~/node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+$info: rgba(100, 100, 200, 1);
 $info-light: lighten($info, 10%);
 $huge: 8rem;
-@import '~/assets/scss/variables/navbar-variables.scss';
-@import '~/assets/scss/variables/box-variables.scss';
+@import "~/assets/scss/variables/navbar-variables.scss";
+@import "~/assets/scss/variables/box-variables.scss";
 // can use color variables, etc here
-@import 'bulma';
+@import "bulma";
 $background-image-urls: (
-	'#frame-one .zoom-background': '~assets/img/Ultra_Care-10.jpg',
-	'#services-header': '~assets/img/Ultra_Care-3.jpg',
-	'#mission': '~assets/img/Ultra_Care-5.jpg'
+	"#frame-one .zoom-background": "~assets/img/Ultra_Care-10.jpg",
+	"#services-header": "~assets/img/Ultra_Care-3.jpg",
+	"#mission": "~assets/img/Ultra_Care-5.jpg"
 );
 
 @each $selector, $url in $background-image-urls {
@@ -17,7 +18,7 @@ $background-image-urls: (
 		background-image: url($url);
 	}
 	.webp #{$selector} {
-		background-image: url($url+'.webp');
+		background-image: url($url+".webp");
 	}
 }
 .zoomed {
@@ -45,7 +46,7 @@ $background-image-urls: (
 			}
 		}
 		.background-modifier {
-			background-color: rgba(0, 0, 0, 0.2);
+			background-color: rgba($info, 0.3);
 		}
 	}
 }
@@ -98,7 +99,7 @@ $background-image-urls: (
 	font-weight: 700;
 }
 #services {
-	background-color: $info-light;
+	background-color: $info;
 	@include tablet {
 		h1 {
 			font-size: $huge;
@@ -113,4 +114,7 @@ $background-image-urls: (
 		max-width: 600px;
 		margin: auto;
 	}
+}
+.navbar-brand .icon {
+	margin-right: 1rem;
 }
