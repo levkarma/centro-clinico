@@ -2,7 +2,7 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 $info: rgba(100, 100, 200, 1);
 $info-light: lighten($info, 10%);
-$huge: 8rem;
+$huge: 5rem;
 @import "~/assets/scss/variables/navbar-variables.scss";
 @import "~/assets/scss/variables/box-variables.scss";
 // can use color variables, etc here
@@ -34,7 +34,7 @@ $background-image-urls: (
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	background-position: center center;
+	background-position: 50% 60%;
 	background-repeat: no-repeat;
 }
 #frame-one {
@@ -42,7 +42,7 @@ $background-image-urls: (
 		height: 100vh;
 		h1 {
 			@include tablet {
-				// font-size: $huge;
+				font-size: $huge;
 			}
 		}
 		.background-modifier {
@@ -117,4 +117,9 @@ $background-image-urls: (
 }
 .navbar-brand .icon {
 	margin-right: 1rem;
+}
+h1,
+.content h1 {
+	font-family: "DM Serif Display";
+	font-weight: 400;
 }
