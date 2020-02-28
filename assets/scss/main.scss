@@ -73,6 +73,7 @@ $background-image-urls: (
 }
 
 #mission {
+	background-position: 67% 50%;
 	@include tablet {
 		padding: 9rem 1.5rem 27rem 1.5rem;
 	}
@@ -122,4 +123,8 @@ h1,
 .content h1 {
 	font-family: "DM Serif Display";
 	font-weight: 400;
+}
+.navbar-burger:hover,
+.burger:hover {
+	color: $white;
 }

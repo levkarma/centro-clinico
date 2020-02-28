@@ -9,7 +9,7 @@
 				<span class="icon is-large"
 					><i class="fas fa-3x fa-clinic-medical"></i
 				></span>
-				<h1 class="is-size-2">
+				<h1 class="is-size-2-tablet is-size-3-mobile">
 					Centro Clinico
 				</h1>
 				<!-- <picture>
@@ -22,9 +22,11 @@
 			<a
 				role="button"
 				class="navbar-burger burger"
+				:class="{ 'is-active': mobileMenuActive }"
 				aria-label="menu"
 				aria-expanded="false"
 				data-target="navbarBasicExample"
+				@click.stop="$emit('openMobileMenu')"
 			>
 				<span aria-hidden="true"></span>
 				<span aria-hidden="true"></span>
@@ -32,7 +34,11 @@
 			</a>
 		</div>
 
-		<div id="navbarBasicExample" class="navbar-menu">
+		<div
+			id="navbar"
+			class="navbar-menu"
+			:class="{ 'is-active': mobileMenuActive }"
+		>
 			<div class="navbar-end">
 				<nuxt-link to="/" class="navbar-item">
 					{{ $t("header.home") }}
@@ -76,6 +82,7 @@
 <script>
 export default {
 	name: "NavBar",
+	props: ["mobileMenuActive"],
 	data() {
 		return {};
 	},
