@@ -29,7 +29,8 @@ export default {
    */
   plugins: [
     // '~/plugins/delay-heavy-elements.client.js',
-    '~/plugins/webp-support.client.js'
+    '~/plugins/webp-support.client.js',
+    { src: '~/plugins/aos.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules

@@ -1,6 +1,6 @@
 {
   "en": {
-    "clinicName": "Ultra Care Family Clinic",
+    "clinicName": "Centro Clinico Family Clinic",
     "scheduleAppointment": "Schedule an appointment.",
     "header": {
       "home": "Home",
@@ -43,17 +43,6 @@
           "blurb": "The newest provider on the ultra care team. Allison has been a nurse practitioner for ___ years. Passionate about women’s health and patient education; you can count on her to provide exceptionally professional care with a compassionate approach."
         },
         "phone": "973-341-3782"
-      },
-      {
-        "name": "6th Ave",
-        "address": "185 6th Ave, Paterson, NJ 07501",
-        "details": "Located in the same building as WIC Services; down the hall on the first floor. The first of all the open locations, patients here have been regulars for years.",
-        "hours": "Monday - Friday 9:30- 6:00pm",
-        "staff": {
-          "name": "Dr. Luis Luna MD",
-          "blurb": "Luis Luna has been a provider in the community of Patterson for over  10 years. His patient’s are the biggest testament to his attention to detail and investment in bettering their lives. He can be found in the 6th Avenue location which is the first of all the Ultra Care clinics."
-        },
-        "phone": "973-782-5550"
       }
     ],
     "mission": {
@@ -65,34 +54,34 @@
     },
     "coming-soon": "Coming soon.",
     "faq": [
-              {
-                "q": "What insurance do you accept?",
-                "a": "We Accept ALL NJ Insurances except Aetna Silver. <br><p style='font-size:14px;'>This includes Medicare and Medicaid</p>"
-              },
-              {
-                "q": "What are the office hours?",
-                "a": "<strong>6th Ave</strong>: Monday - Friday 9:30am - 6:00pm<br><strong>Hine St</strong>:  Monday - Friday 8:30am - 5:30pm<br><strong>Clifton</strong> : Monday - Friday 8:30am - 5:30pm"
-              },
-              {
-                "q": "Do I need to bring anything to my appointment?",
-                "a": "You should always bring photo ID and your Insurance card to you appointments. New patients should also bring a list of their medications as well as know the name of your previous primary care provider."
-              },
-              {
-                "q": "Will you see children?",
-                "a": "While we do not specialize in pediatrics we will see children over 12 months of age."
-              },
-              {
-                "q": "Do you accept walk-in patients?",
-                "a": "All the locations have appointments from opening to close. Walk-ins should go to our office in Clifton as this office leaves room in their schedule for walk ins."
-              },
-              {
-                "q": "Is Spanish spoken at all offices?",
-                "a": "All Ultra Care providers and employees speak both English and Spanish to ensure quality care."
-              }    
+      {
+        "q": "What insurance do you accept?",
+        "a": "We Accept ALL NJ Insurances except Aetna Silver. <br><p style='font-size:14px;'>This includes Medicare and Medicaid</p>"
+      },
+      {
+        "q": "What are the office hours?",
+        "a": "<strong>Hine St</strong>:  Monday - Friday 8:30am - 5:30pm<br><strong>Clifton</strong> : Monday - Friday 8:30am - 5:30pm"
+      },
+      {
+        "q": "Do I need to bring anything to my appointment?",
+        "a": "You should always bring photo ID and your Insurance card to you appointments. New patients should also bring a list of their medications as well as know the name of your previous primary care provider."
+      },
+      {
+        "q": "Will you see children?",
+        "a": "While we do not specialize in pediatrics we will see children over 12 months of age."
+      },
+      {
+        "q": "Do you accept walk-in patients?",
+        "a": "All the locations have appointments from opening to close. Walk-ins should go to our office in Clifton as this office leaves room in their schedule for walk ins."
+      },
+      {
+        "q": "Is Spanish spoken at all offices?",
+        "a": "All Centro Clinico providers and employees speak both English and Spanish to ensure quality care."
+      }
     ]
   },
   "es": {
-    "clinicName": "Clínica de Familia: Ultra Care",
+    "clinicName": "Clínica de Familia: Centro Clinico",
     "scheduleAppointment": "Hacer Cita.",
     "header": {
       "home": "Inicio",
@@ -135,17 +124,6 @@
           "blurb": "Allison Barria recibió su Bachillerato en Enfermería de Fairfield University en Connecticut donde ella se graduó con honores. Ella recibió su Maestría en Enfermería de Rutgers University en Newark donde se especializó en Medicina Adulta/Gerontología y esta reconocida por la Academia Americana de Nurse Practitioners. Alison tiene 6 años de experiencia trabajando en el departamento ortopédico de Hackensack University Medical Center. Ella es bilingüe y puede hablar Ingles y Español."
         },
         "phone": "973-341-3782"
-      },
-      {
-        "name": "6th Ave",
-        "address": "185 6th Ave, Paterson, NJ 07501",
-        "details": "Ubicado en el mismo edificio que los Servicios WIC; siguiendo el corredor en el primer piso. La primera de todas las oficinas, los pacientes aquí han estado aquí desde el inicio de Ultra Care en muchos casos.",
-        "hours": "Lunes – Viernes 9:30- 6:00pm",
-        "staff": {
-          "name": "Dr. Luis Luna MD",
-          "blurb": "Dr. Luis Luna ha trabajado con la comunidad de Paterson NJ por más de 10 anos. La felicidad de sus pacientes son la prueba más grande de su atención a detalles y la importancia que el toma en ver los mejorar. Se encuentra en la ubicación de la Sexta Avenida; la primera de todas las clínicas de Ultra Care."
-        },
-        "phone": "973-782-5550"
       }
     ],
     "mission": {
@@ -163,7 +141,7 @@
       },
       {
         "q": "Cuales son los horarios de negocio?",
-        "a": "<strong>6th Ave</strong>: Lunes - Viernes 9:30am - 6:00pm<br><strong>Hine St</strong>:  Lunes - Viernes 8:30am - 5:30pm<br><strong>Clifton</strong> : Lunes - Viernes 8:30am - 5:30pm"
+        "a": "<strong>Hine St</strong>:  Lunes - Viernes 8:30am - 5:30pm<br><strong>Clifton</strong> : Lunes - Viernes 8:30am - 5:30pm"
       },
       {
         "q": "Necesito traer algo conmigo a mi cita",
@@ -179,9 +157,8 @@
       },
       {
         "q": "Se habla Español en todas las oficinas?",
-        "a": "Todos los empleados de Ultra Care hablan Ingles y Español para asegurar la mejor calidad de atención medica."
-      }    
+        "a": "Todos los empleados de Centro Clinico hablan Ingles y Español para asegurar la mejor calidad de atención medica."
+      }
     ]
   }
 }
-

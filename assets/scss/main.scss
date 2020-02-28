@@ -36,11 +36,16 @@ $background-image-urls: (
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-#frame-one.hero {
-	height: 100vh;
-	h1 {
-		@include tablet {
-			font-size: $huge;
+#frame-one {
+	&.hero {
+		height: 100vh;
+		h1 {
+			@include tablet {
+				// font-size: $huge;
+			}
+		}
+		.background-modifier {
+			background-color: rgba(0, 0, 0, 0.2);
 		}
 	}
 }
@@ -62,23 +67,30 @@ $background-image-urls: (
 	width: 100%;
 	height: 100%;
 }
-#mission .background-modifier {
-	background-color: rgba(255, 255, 255, 0.5);
-}
 #services-header .background-modifier {
 	background-color: rgba(0, 0, 0, 0.2);
 }
-#mission #header {
-	position: absolute;
-	top: 3rem;
-	left: 3rem;
-}
+
 #mission {
 	@include tablet {
 		padding: 9rem 1.5rem 27rem 1.5rem;
 	}
 	@include mobile {
 		padding: 30rem 1.5rem 6rem 1.5rem;
+	}
+	#header {
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+	}
+	.background-modifier {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	.content {
+		@include tablet {
+			padding: 5rem 3rem;
+		}
+		box-shadow: 5px 5px 20px $light;
 	}
 }
 #services .service-box {
@@ -91,5 +103,14 @@ $background-image-urls: (
 		h1 {
 			font-size: $huge;
 		}
+	}
+}
+#locations.section {
+	padding: 5rem 10rem;
+}
+#faqs {
+	@include tablet {
+		max-width: 600px;
+		margin: auto;
 	}
 }

@@ -1,11 +1,16 @@
 <template>
   <div>
-    <NavBar />
     <FrameOne />
     <FrameTwo />
     <Mission />
     <Bulletin />
     <Services />
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p><strong>Centro Clinico</strong></p>
+        <p>&copy; 2020</p>
+      </div>
+    </footer>
   </div>
 </template>
 

@@ -2,11 +2,12 @@
 	<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a class="navbar-item" href="/">
-				<picture>
+				<span class="is-size-2" style="font-weight: 700;">Centro Clinico</span>
+				<!-- <picture>
 					<source srcset="~/assets/img/logo.png" type="image/png" />
 					<source srcset="~/assets/img/logo.png.webp" type="image/webp" />
 					<img srcset="~/assets/img/logo.png" type="image/png" />
-				</picture>
+				</picture> -->
 			</a>
 
 			<a
@@ -23,39 +24,21 @@
 		</div>
 
 		<div id="navbarBasicExample" class="navbar-menu">
-			<div class="navbar-start">
-				<a class="navbar-item">
-					Home
-				</a>
-
-				<a class="navbar-item">
-					Documentation
-				</a>
-
-				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link">
-						More
-					</a>
-
-					<div class="navbar-dropdown">
-						<a class="navbar-item">
-							About
-						</a>
-						<a class="navbar-item">
-							Jobs
-						</a>
-						<a class="navbar-item">
-							Contact
-						</a>
-						<hr class="navbar-divider" />
-						<a class="navbar-item">
-							Report an issue
-						</a>
-					</div>
-				</div>
-			</div>
-
 			<div class="navbar-end">
+				<nuxt-link to="/" class="navbar-item">
+					{{ $t('header.home') }}
+				</nuxt-link>
+
+				<nuxt-link to="/#services" class="navbar-item">
+					{{ $t('services') }}
+				</nuxt-link>
+
+				<nuxt-link class="navbar-item" to="/locations">
+					{{ $t('header.locations') }}
+				</nuxt-link>
+				<nuxt-link class="navbar-item" to="/faqs">
+					{{ $t('header.faqs') }}
+				</nuxt-link>
 				<div class="navbar-item">
 					<div class="buttons">
 						<a

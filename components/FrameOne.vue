@@ -4,14 +4,15 @@
 		id="frame-one"
 	>
 		<div class="zoom-background zoomed"></div>
+		<div class="background-modifier"></div>
 		<div class="hero-body">
 			<div class="container content has-text-centered">
-				<h1 class="has-text-white">
+				<h1 class="has-text-white is-size-1">
 					{{ $t('clinicName') }}
 				</h1>
-				<h2 class="subtitle has-text-white">
+				<nuxt-link to="/locations" class="button is-large">
 					{{ $t('scheduleAppointment') }}
-				</h2>
+				</nuxt-link>
 			</div>
 		</div>
 	</section>
