@@ -125,6 +125,15 @@ $background-image-urls: (
 	@include tablet {
 		padding: 5rem 10rem;
 	}
+	.columns.is-reversed-mobile {
+		@include mobile {
+			display: flex;
+			flex-direction: column-reverse;
+			.column {
+				width: 100%;
+			}
+		}
+	}
 }
 #faqs {
 	@include tablet {

@@ -1,18 +1,21 @@
 <template>
 	<div id="locations" class="section has-background-light">
 		<h1 class="is-size-1 has-text-centered">
-			{{ $t('header.locations') }}
+			{{ $t("header.locations") }}
 		</h1>
-		<div class="columns is-vcentered is-centered" data-aos="fade-down">
-			<div class="column is-half content">
-				<h1 class="is-size-3">{{ $t('locations[0].name') }}</h1>
-				<h2 class="is-size-4">{{ $t('locations[0].address') }}</h2>
-				<p>{{ $t('locations[0].details') }}</p>
-				<p>{{ $t('locations[0].hours') }}</p>
-				<p>{{ $t('locations[0].phone') }}</p>
+		<div
+			class="columns is-vcentered is-centered is-reversed-mobile"
+			data-aos="fade-down"
+		>
+			<div class="column is-half content ">
+				<h1 class="is-size-3">{{ $t("locations[0].name") }}</h1>
+				<h2 class="is-size-4">{{ $t("locations[0].address") }}</h2>
+				<p>{{ $t("locations[0].details") }}</p>
+				<p>{{ $t("locations[0].hours") }}</p>
+				<p>{{ $t("locations[0].phone") }}</p>
 				<div class="box provider-blurb">
-					<p class="is-size-5">{{ $t('locations[0].staff.name') }}</p>
-					<p>{{ $t('locations[0].staff.blurb') }}</p>
+					<p class="is-size-5">{{ $t("locations[0].staff.name") }}</p>
+					<p>{{ $t("locations[0].staff.blurb") }}</p>
 				</div>
 			</div>
 			<div class="column is-half">
@@ -44,14 +47,14 @@
 				</figure>
 			</div>
 			<div class="column is-half content">
-				<h1 class="is-size-3">{{ $t('locations[1].name') }}</h1>
-				<h2 class="is-size-4">{{ $t('locations[1].address') }}</h2>
-				<p>{{ $t('locations[1].details') }}</p>
-				<p>{{ $t('locations[1].hours') }}</p>
-				<p>{{ $t('locations[1].phone') }}</p>
+				<h1 class="is-size-3">{{ $t("locations[1].name") }}</h1>
+				<h2 class="is-size-4">{{ $t("locations[1].address") }}</h2>
+				<p>{{ $t("locations[1].details") }}</p>
+				<p>{{ $t("locations[1].hours") }}</p>
+				<p>{{ $t("locations[1].phone") }}</p>
 				<div class="box provider-blurb">
-					<p class="is-size-5">{{ $t('locations[1].staff.name') }}</p>
-					<p>{{ $t('locations[1].staff.blurb') }}</p>
+					<p class="is-size-5">{{ $t("locations[1].staff.name") }}</p>
+					<p>{{ $t("locations[1].staff.blurb") }}</p>
 				</div>
 			</div>
 		</div>
@@ -60,12 +63,12 @@
 
 <script>
 export default {
-	name: 'locations',
+	name: "locations",
 
 	data() {
-		return {}
+		return {};
 	}
-}
+};
 </script>
 
 <style lang="css" scoped></style>
