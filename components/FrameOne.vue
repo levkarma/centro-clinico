@@ -10,7 +10,10 @@
 				<h1 class="has-text-white">
 					{{ $t("clinicName") }}
 				</h1>
-				<nuxt-link to="/locations" class="button is-large">
+				<nuxt-link
+					:to="localePath('/locations')"
+					class="button is-large"
+				>
 					{{ $t("scheduleAppointment") }}
 				</nuxt-link>
 			</div>

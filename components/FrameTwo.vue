@@ -16,7 +16,7 @@
 			Book an appointment or walk in today!
 		</h1>
 		<nuxt-link
-			to="/locations"
+			:to="localePath('/locations')"
 			data-aos="fade-down"
 			class="button is-large is-light has-top-margin"
 		>

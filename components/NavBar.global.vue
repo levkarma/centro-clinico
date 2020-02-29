@@ -40,20 +40,17 @@
 			:class="{ 'is-active': mobileMenuActive }"
 		>
 			<div class="navbar-end">
-				<nuxt-link to="/" class="navbar-item">
+				<nuxt-link :to="localePath('/')" class="navbar-item">
 					{{ $t("header.home") }}
 				</nuxt-link>
-				<nuxt-link
-					class="navbar-item"
-					:to="{ path: '/', hash: 'services' }"
-				>
+				<nuxt-link class="navbar-item" :to="localePath('/#services')">
 					{{ $t("services") }}
 				</nuxt-link>
 
-				<nuxt-link class="navbar-item" to="/locations">
+				<nuxt-link class="navbar-item" :to="localePath('/locations')">
 					{{ $t("header.locations") }}
 				</nuxt-link>
-				<nuxt-link class="navbar-item" to="/faqs">
+				<nuxt-link class="navbar-item" :to="localePath('/faqs')">
 					{{ $t("header.faqs") }}
 				</nuxt-link>
 				<div class="navbar-item">
