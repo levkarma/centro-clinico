@@ -17,7 +17,9 @@
 				data-aos="fade-in"
 				data-aos-offset="-50"
 			>
-				<h1 class="is-size-1 has-text-centered has-text-white">
+				<h1
+					class="is-size-1-tablet is-size-4-mobile has-text-centered has-text-white"
+				>
 					{{ service }}
 				</h1>
 			</div>
