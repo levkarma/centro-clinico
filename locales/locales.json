@@ -2,6 +2,9 @@
   "en": {
     "clinicName": ["Centro Clinico", "Family Clinic"],
     "scheduleAppointment": "Schedule an appointment.",
+    "patientPortal": "Patient Portal",
+    "comingSoon": "Coming Soon",
+    "frameTwoText": "Book an appointment or walk in today!",
     "header": {
       "home": "Home",
       "locations": "Locations",
@@ -84,6 +87,9 @@
   "es": {
     "clinicName": ["Centro Clinico", "Clínica de Familia"],
     "scheduleAppointment": "Hacer Cita.",
+    "patientPortal": "Portal del Paciente",
+    "comingSoon": "Próximamente",
+    "frameTwoText": "Vista con o sin cita!",
     "header": {
       "home": "Inicio",
       "locations": "Ubicaciones",

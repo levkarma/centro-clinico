@@ -24,7 +24,7 @@
 				</figure>
 			</div> -->
 				<h1 data-aos="fade-down" class="">
-					Book an appointment or walk in today!
+					{{ $t('frameTwoText') }}
 				</h1>
 				<nuxt-link :to="localePath('/locations')">
 					<button

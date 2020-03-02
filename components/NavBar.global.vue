@@ -50,7 +50,8 @@
 					{{ $t('header.faqs') }}
 				</nuxt-link>
 				<a class="navbar-item">
-					Patient Portal&nbsp<span class="is-size-7">(Coming Soon)</span>
+					{{ $t('patientPortal') }}
+					&nbsp<span class="is-size-7">({{ $t('comingSoon') }})</span>
 				</a>
 				<div class="navbar-item">
 					<div class="buttons">

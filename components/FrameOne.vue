@@ -18,7 +18,9 @@
 							{{ $t('scheduleAppointment') }}
 						</nuxt-link>
 						<button class="button is-medium is-rounded is-light">
-							Patient Portal&nbsp<span class="is-size-7">(coming soon)</span>
+							{{ $t('patientPortal') }}&nbsp<span class="is-size-7"
+								>({{ $t('comingSoon') }})</span
+							>
 						</button>
 					</div>
 					<div class="is-hidden-tablet">
