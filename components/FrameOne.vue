@@ -6,8 +6,8 @@
 		<div class="zoom-background zoomed"></div>
 		<div class="background-modifier"></div>
 		<div class="hero-body">
-			<div class="columns">
-				<div class="column is-half is-relative" style="width: 100%;">
+			<div class="columns" style="width: 100%;">
+				<div class="column is-half is-relative">
 					<h1 class="has-text-white" v-html="$t('clinicName[0]')"></h1>
 					<h2 class="has-text-white" v-html="$t('clinicName[1]')"></h2>
 					<div class="is-hidden-mobile">
