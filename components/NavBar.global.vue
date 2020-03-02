@@ -1,7 +1,7 @@
 <template>
 	<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<a class="navbar-item" href="/">
+			<nuxt-link class="navbar-item" :to="localePath('/')">
 				<span class="icon is-medium"
 					><i class="fas fa-2x fa-clinic-medical"></i
 				></span>
@@ -13,7 +13,7 @@
 					<source srcset="~/assets/img/logo.png.webp" type="image/webp" />
 					<img srcset="~/assets/img/logo.png" type="image/png" />
 				</picture> -->
-			</a>
+			</nuxt-link>
 
 			<a
 				role="button"
@@ -50,8 +50,11 @@
 					{{ $t('header.faqs') }}
 				</nuxt-link>
 				<a class="navbar-item">
-					{{ $t('patientPortal') }}
-					&nbsp<span class="is-size-7">({{ $t('comingSoon') }})</span>
+					<div class="has-text-centered-desktop">
+						{{ $t('patientPortal') }}<br /><span class="is-size-7"
+							>({{ $t('comingSoon') }})</span
+						>
+					</div>
 				</a>
 				<div class="navbar-item">
 					<div class="buttons">
