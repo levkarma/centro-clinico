@@ -1,6 +1,6 @@
 {
   "en": {
-    "clinicName": "Centro Clinico Family Clinic",
+    "clinicName": ["Centro Clinico", "Family Clinic"],
     "scheduleAppointment": "Schedule an appointment.",
     "header": {
       "home": "Home",
@@ -17,7 +17,8 @@
       "Chronic Conditions",
       "Mental Health",
       "Preventative Care",
-      "Sports Medicine",
+      "Oncology",
+      "Hematology",
       "Women's Health",
       "Men's Health"
     ],
@@ -81,7 +82,7 @@
     ]
   },
   "es": {
-    "clinicName": "Clínica de Familia: Centro Clinico",
+    "clinicName": ["Centro Clinico", "Clínica de Familia"],
     "scheduleAppointment": "Hacer Cita.",
     "header": {
       "home": "Inicio",
@@ -98,7 +99,8 @@
       "Condiciones Crónicas",
       "Salud Mental",
       "Medicina Preventiva",
-      "Medicina Deportiva",
+      "Oncología",
+      "Hematología",
       "Salud Feminina",
       "Salud de los Hombres"
     ],

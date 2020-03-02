@@ -1,15 +1,11 @@
 <template>
-	<nav
-		class="navbar is-spaced"
-		role="navigation"
-		aria-label="main navigation"
-	>
+	<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a class="navbar-item" href="/">
-				<span class="icon is-large"
-					><i class="fas fa-3x fa-clinic-medical"></i
+				<span class="icon is-medium"
+					><i class="fas fa-2x fa-clinic-medical"></i
 				></span>
-				<h1 class="is-size-2-tablet is-size-3-mobile">
+				<h1 class="is-size-3-tablet is-size-4-mobile">
 					Centro Clinico
 				</h1>
 				<!-- <picture>
@@ -41,18 +37,21 @@
 		>
 			<div class="navbar-end">
 				<nuxt-link :to="localePath('/')" class="navbar-item">
-					{{ $t("header.home") }}
+					{{ $t('header.home') }}
 				</nuxt-link>
 				<nuxt-link class="navbar-item" :to="localePath('/#services')">
-					{{ $t("services") }}
+					{{ $t('services') }}
 				</nuxt-link>
 
 				<nuxt-link class="navbar-item" :to="localePath('/locations')">
-					{{ $t("header.locations") }}
+					{{ $t('header.locations') }}
 				</nuxt-link>
 				<nuxt-link class="navbar-item" :to="localePath('/faqs')">
-					{{ $t("header.faqs") }}
+					{{ $t('header.faqs') }}
 				</nuxt-link>
+				<a class="navbar-item">
+					Patient Portal&nbsp<span class="is-size-7">(Coming Soon)</span>
+				</a>
 				<div class="navbar-item">
 					<div class="buttons">
 						<a
@@ -78,13 +77,13 @@
 
 <script>
 export default {
-	name: "NavBar",
-	props: ["mobileMenuActive"],
+	name: 'NavBar',
+	props: ['mobileMenuActive'],
 	data() {
-		return {};
+		return {}
 	},
 	mounted() {}
-};
+}
 </script>
 
 <style lang="css" scoped></style>

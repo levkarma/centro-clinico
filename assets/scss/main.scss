@@ -1,16 +1,17 @@
-@import "~/node_modules/bulma/sass/utilities/_all.sass";
-@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import '~/node_modules/bulma/sass/utilities/_all.sass';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 $info: rgba(100, 100, 200, 1);
 $info-light: lighten($info, 10%);
-$huge: 5rem;
-@import "~/assets/scss/variables/navbar-variables.scss";
-@import "~/assets/scss/variables/box-variables.scss";
+$giant: 5rem;
+$huge: 4rem;
+@import '~/assets/scss/variables/navbar-variables.scss';
+@import '~/assets/scss/variables/box-variables.scss';
 // can use color variables, etc here
-@import "bulma";
+@import 'bulma';
 $background-image-urls: (
-	"#frame-one .zoom-background": "~assets/img/Ultra_Care-10.jpg",
-	"#services-header": "~assets/img/Ultra_Care-3.jpg",
-	"#mission": "~assets/img/Ultra_Care-5.jpg"
+	'#frame-one .zoom-background': '~assets/img/Ultra_Care-10.jpg',
+	'#services-header': '~assets/img/Ultra_Care-3.jpg',
+	'#mission': '~assets/img/Ultra_Care-5.jpg'
 );
 
 @each $selector, $url in $background-image-urls {
@@ -18,7 +19,7 @@ $background-image-urls: (
 		background-image: url($url);
 	}
 	.webp #{$selector} {
-		background-image: url($url+".webp");
+		background-image: url($url+'.webp');
 	}
 }
 .zoomed {
@@ -33,11 +34,12 @@ $background-image-urls: (
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-size: cover;
-	background-position: 50% 60%;
+	// background-size: cover;
+	background-size: 130%;
+	background-position: 0% 40%;
 	@include mobile {
-		background-size: cover;
-		background-position: 50% 0%;
+		background-size: auto 120%;
+		background-position: 51% 70%;
 	}
 	background-repeat: no-repeat;
 }
@@ -45,23 +47,80 @@ $background-image-urls: (
 	&.hero {
 		height: 100vh;
 		h1 {
+			@extend .is-size-2;
+			margin-bottom: 0;
 			@include tablet {
-				font-size: $huge;
+				font-size: $giant !important;
 			}
 		}
+		h2 {
+			margin-top: 0;
+			@extend .is-size-4;
+			// font-family: 'DM Serif Display';
+			font-weight: 400;
+			margin-bottom: 1rem;
+		}
 		.background-modifier {
-			background-color: rgba($info, 0.5);
+			@include tablet {
+				background: linear-gradient(to right, rgba($info, 0.6), rgba($info, 0));
+			}
+			@include mobile {
+				background: linear-gradient(to top, rgba($info, 1), rgba($info, 0));
+			}
 		}
 		.hero-body {
-			align-items: flex-end;
 			@include mobile {
-				padding: 3rem 0 0 0;
+				align-items: flex-end;
+				padding: 3rem 1rem 3rem 3rem;
 				.container {
 					background-color: $info;
 					padding: 1rem;
 				}
 			}
 		}
+		.button {
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+#frame-two {
+	@include tablet {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	background-color: rgba($info, 0.05);
+	h1 {
+		@include mobile {
+			font-size: 2rem;
+		}
+		@include tablet {
+			font-size: 3rem;
+		}
+		@include desktop {
+			font-size: $huge;
+			line-height: 1.1;
+		}
+	}
+	.columns > div:last-child {
+		@include tablet {
+			padding-left: 3rem;
+		}
+	}
+	.inner {
+		@include tablet {
+			margin: auto;
+			max-width: 700px;
+		}
+	}
+	.button {
+		@include tablet {
+			margin-top: 3rem;
+		}
+		@include mobile {
+			margin-top: 1rem;
+		}
+		background-color: $info;
+		color: $white;
 	}
 }
 .has-overflow-hidden {
@@ -117,8 +176,12 @@ $background-image-urls: (
 	background-color: $info;
 	@include tablet {
 		h1 {
-			font-size: $huge;
+			font-size: $giant;
 		}
+	}
+	#services-list {
+		margin: auto;
+		max-width: 700px;
 	}
 }
 #locations.section {
@@ -146,7 +209,7 @@ $background-image-urls: (
 }
 h1,
 .content h1 {
-	font-family: "DM Serif Display";
+	font-family: 'DM Serif Display';
 	font-weight: 400;
 }
 .navbar-burger:hover,
@@ -155,4 +218,10 @@ h1,
 }
 .twitter-timeline {
 	width: 100vw !important;
+}
+footer > .columns {
+	@include tablet {
+		max-width: 600px;
+		margin: auto;
+	}
 }

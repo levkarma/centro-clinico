@@ -1,38 +1,52 @@
 <template>
-	<section class="section is-medium has-text-centered">
-		<div style="width: 100px; margin: auto;">
-			<figure class="image is-1by1" data-aos="fade-down">
-				<picture>
-					<source srcset="~/assets/img/logo.png" type="image/png" />
-					<source
-						srcset="~/assets/img/logo.png.webp"
-						type="image/webp"
-					/>
-					<img src="~/assets/img/logo.png" alt="" />
-				</picture>
-			</figure>
+	<section class="section is-medium has-text-centered" id="frame-two">
+		<div class="columns is-vcentered">
+			<div class="column is-half">
+				<figure class="image is-4by3">
+					<picture>
+						<source
+							src="~/assets/img/Ultra_Care-7.jpg.webp"
+							type="image/webp"
+						/>
+						<source src="~/assets/img/Ultra_Care-7.jpg" type="image/png" />
+						<img src="~/assets/img/Ultra_Care-7.jpg" alt="" />
+					</picture>
+				</figure>
+			</div>
+			<div class="column is-half">
+				<!-- 			<div style="width: 100px; margin: auto;">
+				<figure class="image is-1by1" data-aos="fade-down">
+					<picture>
+						<source srcset="~/assets/img/logo.png" type="image/png" />
+						<source srcset="~/assets/img/logo.png.webp" type="image/webp" />
+						<img src="~/assets/img/logo.png" alt="" />
+					</picture>
+				</figure>
+			</div> -->
+				<h1 data-aos="fade-down" class="">
+					Book an appointment or walk in today!
+				</h1>
+				<nuxt-link :to="localePath('/locations')">
+					<button
+						class="button is-medium is-light is-rounded"
+						data-aos="fade-down"
+					>
+						{{ $t('header.locations') }}
+					</button>
+				</nuxt-link>
+			</div>
 		</div>
-		<h1 data-aos="fade-down" class="is-size-2">
-			Book an appointment or walk in today!
-		</h1>
-		<nuxt-link
-			:to="localePath('/locations')"
-			data-aos="fade-down"
-			class="button is-large is-light has-top-margin"
-		>
-			{{ $t("header.locations") }}
-		</nuxt-link>
 	</section>
 </template>
 
 <script>
 export default {
-	name: "FrameTwo",
+	name: 'FrameTwo',
 
 	data() {
-		return {};
+		return {}
 	}
-};
+}
 </script>
 
 <style lang="css" scoped></style>

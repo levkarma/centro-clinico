@@ -11,15 +11,26 @@
 				</h1>
 			</div>
 		</section>
-		<section class="section">
-			<div class="columns is-multiline">
-				<div v-for="service in $t('services-list')" class="column is-one-third">
-					<div class="box has-text-centered service-box has-text-white">
-						<div class="is-size-5">{{ service }}</div>
-					</div>
-				</div>
+		<section class="section" id="services-list">
+			<div
+				v-for="service in $t('services-list')"
+				data-aos="fade-in"
+				data-aos-offset="-50"
+			>
+				<h1 class="is-size-1 has-text-centered has-text-white">
+					{{ service }}
+				</h1>
 			</div>
 		</section>
+		<!-- 		<section class="section">
+			<div class="columns is-multiline is-vcentered">
+				<div v-for="service in $t('services-list')" class="column is-one-third">
+					<h1 class="is-size-1 has-text-centered has-text-white">
+						{{ service }}
+					</h1>
+				</div>
+			</div>
+		</section> -->
 	</section>
 </template>
 

@@ -6,16 +6,34 @@
 		<div class="zoom-background zoomed"></div>
 		<div class="background-modifier"></div>
 		<div class="hero-body">
-			<div class="container content has-text-centered">
-				<h1 class="has-text-white">
-					{{ $t("clinicName") }}
-				</h1>
-				<nuxt-link
-					:to="localePath('/locations')"
-					class="button is-large"
-				>
-					{{ $t("scheduleAppointment") }}
-				</nuxt-link>
+			<div class="columns">
+				<div class="column is-half is-relative" style="width: 100%;">
+					<h1 class="has-text-white" v-html="$t('clinicName[0]')"></h1>
+					<h2 class="has-text-white" v-html="$t('clinicName[1]')"></h2>
+					<div class="is-hidden-mobile">
+						<nuxt-link
+							:to="localePath('/locations')"
+							class="button is-medium is-rounded is-dark"
+						>
+							{{ $t('scheduleAppointment') }}
+						</nuxt-link>
+						<button class="button is-medium is-rounded is-light">
+							Patient Portal&nbsp<span class="is-size-7">(coming soon)</span>
+						</button>
+					</div>
+					<div class="is-hidden-tablet">
+						<nuxt-link
+							:to="localePath('/locations')"
+							class="button is-rounded is-dark"
+						>
+							{{ $t('scheduleAppointment') }}
+						</nuxt-link>
+						<button class="button is-rounded is-light">
+							Patient Portal&nbsp<span class="is-size-7">(coming soon)</span>
+						</button>
+					</div>
+				</div>
+				<div class="column is-half"></div>
 			</div>
 		</div>
 	</section>
@@ -23,18 +41,18 @@
 
 <script>
 export default {
-	name: "FrameOne",
+	name: 'FrameOne',
 
 	data() {
-		return {};
+		return {}
 	},
 	mounted() {
 		window.onload = () =>
 			document
-				.querySelector("#frame-one .zoom-background")
-				.classList.remove("zoomed");
+				.querySelector('#frame-one .zoom-background')
+				.classList.remove('zoomed')
 	}
-};
+}
 </script>
 
 <style lang="css" scoped></style>
