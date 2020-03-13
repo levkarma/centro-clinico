@@ -19,9 +19,7 @@ export default {
       {
         href:
           'https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap',
-        rel: 'preload',
-        as: 'style',
-        onload: 'this.onload=null;this.rel=stylesheet'
+        rel: 'stylesheet'
       }
     ]
   },
