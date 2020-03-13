@@ -5,11 +5,14 @@
 				<figure class="image is-4by3">
 					<picture>
 						<source
-							src="~/assets/img/Ultra_Care-7.jpg.webp"
+							src="~/assets/img/sizes/Ultra_Care-7.jpg-500.webp"
 							type="image/webp"
 						/>
-						<source src="~/assets/img/Ultra_Care-7.jpg" type="image/png" />
-						<img src="~/assets/img/Ultra_Care-7.jpg" alt="" />
+						<source
+							src="~/assets/img/sizes/Ultra_Care-7-500.jpg"
+							type="image/png"
+						/>
+						<img src="~/assets/img/sizes/Ultra_Care-7-500.jpg" alt="" />
 					</picture>
 				</figure>
 			</div>
