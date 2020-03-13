@@ -9,15 +9,30 @@ $huge: 4rem;
 // can use color variables, etc here
 @import 'bulma';
 $background-image-urls: (
-	'#frame-one .zoom-background': '~assets/img/sizes/Ultra_Care-10-1024.jpg',
-	'#services-header': '~assets/img/sizes/Ultra_Care-3-1024.jpg',
-	'#mission': '~assets/img/sizes/Ultra_Care-5-1024.jpg'
+	'#frame-one .zoom-background': (
+		'~assets/img/sizes/Ultra_Care-10-800.jpg',
+		'~assets/img/sizes/Ultra_Care-10.jpg'
+	),
+	'#services-header': (
+		'~assets/img/sizes/Ultra_Care-3-800.jpg',
+		'~assets/img/sizes/Ultra_Care-3.jpg'
+	),
+	'#mission': (
+		'~assets/img/sizes/Ultra_Care-5-800.jpg',
+		'~assets/img/sizes/Ultra_Care-5.jpg'
+	)
 );
 
 @each $selector, $url in $background-image-urls {
 	.no-webp #{$selector},
 	.webp #{$selector} {
-		background-image: url($url);
+		@include touch {
+			background-image: url(nth($url, 1));
+		}
+
+		@include desktop {
+			background-image: url(nth($url, 2));
+		}
 	}
 	// .webp #{$selector} {
 	// 	background-image: url($url+'.webp');
