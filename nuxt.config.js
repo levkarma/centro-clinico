@@ -1,60 +1,62 @@
 export default {
-  mode: "universal",
+  mode: 'universal',
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || "",
+    title: process.env.npm_package_name || '',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || ""
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
       }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         href:
-          "https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap",
-        rel: "stylesheet"
+          'https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap',
+        rel: 'preload',
+        as: 'style',
+        onload: 'this.onload=null;this.rel=stylesheet'
       }
     ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: '#fff' },
   /*
    ** Global CSS
    */
-  css: ["~/assets/scss/main.scss"],
+  css: ['~/assets/scss/main.scss'],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
     // '~/plugins/delay-heavy-elements.client.js',
-    "~/plugins/webp-support.client.js",
-    { src: "~/plugins/aos.js", mode: "client" }
+    '~/plugins/webp-support.client.js',
+    { src: '~/plugins/aos.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/global-components"],
+  buildModules: ['@nuxtjs/global-components'],
   /*
    ** Nuxt.js modules
    */
   modules: [
     [
-      "nuxt-i18n",
+      'nuxt-i18n',
       {
-        locales: ["en", "es"],
-        defaultLocale: "en",
+        locales: ['en', 'es'],
+        defaultLocale: 'en',
         vueI18n: {
-          fallbackLocale: "en",
-          messages: require("./locales/locales.json")
+          fallbackLocale: 'en',
+          messages: require('./locales/locales.json')
         }
       }
     ]
@@ -68,4 +70,4 @@ export default {
      */
     extend(config, ctx) {}
   }
-};
+}
