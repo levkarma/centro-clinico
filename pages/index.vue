@@ -35,6 +35,9 @@ import Services from '~/components/Services'
 import Mission from '~/components/Mission'
 import FrameTwo from '~/components/FrameTwo'
 export default {
+  head() {
+    title: 'Centro Clinico'
+  },
   components: {
     FrameOne,
     Bulletin,

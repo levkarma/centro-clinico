@@ -11,7 +11,9 @@
 <script>
 export default {
 	name: 'faqs',
-
+	head() {
+		title: "Centro Clinico: FAQ's"
+	},
 	data() {
 		return {}
 	}
