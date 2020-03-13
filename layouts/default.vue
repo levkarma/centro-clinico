@@ -5,6 +5,26 @@
       :mobileMenuActive="mobileMenuActive"
     />
     <nuxt />
+    <footer class="footer">
+      <div class="columns has-text-centered-mobile">
+        <div class="column is-half is-size-6 ">
+          <h1>{{ $t('locations[0].name') }}</h1>
+          <h2>{{ $t('locations[0].address') }}</h2>
+          <p>{{ $t('locations[0].hours') }}</p>
+          <p>{{ $t('locations[0].phone') }}</p>
+        </div>
+        <div class="column is-half is-size-6">
+          <h1>{{ $t('locations[1].name') }}</h1>
+          <h2>{{ $t('locations[1].address') }}</h2>
+          <p>{{ $t('locations[1].hours') }}</p>
+          <p>{{ $t('locations[1].phone') }}</p>
+        </div>
+      </div>
+      <div class="content has-text-centered">
+        <p><strong>Centro Clinico</strong></p>
+        <p>&copy; 2020</p>
+      </div>
+    </footer>
   </div>
 </template>
 <script>
@@ -12,15 +32,15 @@ export default {
   data() {
     return {
       mobileMenuActive: false
-    };
+    }
   },
   mounted() {}
-};
+}
 </script>
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
