@@ -17,11 +17,11 @@
 						>
 							{{ $t('scheduleAppointment') }}
 						</nuxt-link>
-						<button class="button is-medium is-rounded is-light">
-							{{ $t('patientPortal') }}&nbsp<span class="is-size-7"
-								>({{ $t('comingSoon') }})</span
-							>
-						</button>
+						<a target="_blank" href="http://20836.portal.athenahealth.com">
+							<button class="button is-medium is-rounded is-light">
+								{{ $t('patientPortal') }}
+							</button></a
+						>
 					</div>
 					<div class="is-hidden-tablet">
 						<nuxt-link
