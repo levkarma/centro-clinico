@@ -49,15 +49,16 @@
 				<nuxt-link class="navbar-item" :to="localePath('/faqs')">
 					{{ $t('header.faqs') }}
 				</nuxt-link>
-				<a class="navbar-item">
-					<div class="has-text-centered-desktop">
-						{{ $t('patientPortal') }}<br /><span class="is-size-7"
-							>({{ $t('comingSoon') }})</span
-						>
-					</div>
-				</a>
+
 				<div class="navbar-item">
 					<div class="buttons">
+						<a
+							target="_blank"
+							href="http://20836.portal.athenahealth.com"
+							class="button is-dark"
+						>
+							{{ $t('patientPortal') }}
+						</a>
 						<a
 							v-if="this.$i18n.locale === 'en'"
 							class="button is-light"
