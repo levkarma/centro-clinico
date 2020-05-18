@@ -1,5 +1,6 @@
 <template>
   <div @click="mobileMenuActive = false">
+    <important-banner></important-banner>
     <NavBar
       @openMobileMenu="mobileMenuActive = !mobileMenuActive"
       :mobileMenuActive="mobileMenuActive"
@@ -34,6 +35,9 @@
 </template>
 <script>
 export default {
+  components: {
+    'important-banner': require('~/components/important-banner.vue').default
+  },
   data() {
     return {
       mobileMenuActive: false

@@ -82,7 +82,8 @@
         "q": "Is Spanish spoken at all offices?",
         "a": "All Centro Clinico providers and employees speak both English and Spanish to ensure quality care."
       }
-    ]
+    ],
+    "importantTopBanner": "Covid 19 Testing Available Now!"
   },
   "es": {
     "clinicName": ["Centro Clinico", "Clínica de Familia"],
@@ -167,6 +168,7 @@
         "q": "Se habla Español en todas las oficinas?",
         "a": "Todos los empleados de Centro Clinico hablan Ingles y Español para asegurar la mejor calidad de atención medica."
       }
-    ]
+    ],
+    "importantTopBanner": "Covid 19 Testing Available Now!"
   }
 }
