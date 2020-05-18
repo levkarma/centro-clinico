@@ -7,8 +7,8 @@
 					<a
 						class="twitter-timeline"
 						data-height="500"
-						href="https://twitter.com/BarackObama?ref_src=twsrc%5Etfw"
-						>Tweets by BarackObama</a
+						href="https://twitter.com/CentroClinicoNJ?ref_src=twsrc%5Etfw"
+						>Tweets by CentroClinicoNJ</a
 					>
 					<script
 						async
