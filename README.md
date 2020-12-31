@@ -1,10 +1,10 @@
-# [goclinico.com](goclinico.com)
+# [goclinico.com](https://goclinico.com)
 
 ## Centro Clinico, New Jersey
 
 This site was created from scratch for a family clinic in New Jersey.
 
-The site is statically built using [Nuxt.js](https://nuxtjs.org/) and hosted for free on [netlify.com](netlify.com).
+The site is statically built using [Nuxt.js](https://nuxtjs.org/) (Vue.js static site generator) and hosted for free on [https://netlify.com](netlify.com).
 
 Features include no-lag navigation between pages due to SPA design and Spanish translations.
 
