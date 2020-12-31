@@ -1,22 +1,13 @@
-# centro-clinico
+# [goclinico.com](goclinico.com)
 
-> Site rework for centro-clinico
+## Centro Clinico, New Jersey
 
-## Build Setup
+This site was created from scratch for a family clinic in New Jersey.
 
-``` bash
-# install dependencies
-$ npm install
+The site is statically built using [Nuxt.js](https://nuxtjs.org/) and hosted for free on [netlify.com](netlify.com).
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+Features include no-lag navigation between pages due to SPA design and Spanish translations.
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+Instead of creating a CMS to post bulletin updates, the client's needs were satisfied by embedding their Twitter feed.
 
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Design was loosely inspired by [https://www.onemedical.com/](https://www.onemedical.com/). Bulma is used as a CSS framework.
