@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@nuxtjs/global-components": "^0.6.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2"
   }
 }
